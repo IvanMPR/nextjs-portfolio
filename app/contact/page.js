@@ -5,5 +5,9 @@ export const metadata = {
 };
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div className=' flex items-center flex-1 justify-center bg-rose-200'>
+      <h1 className=' '>Contact page</h1>
+    </div>
+  );
 }

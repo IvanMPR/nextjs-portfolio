@@ -4,5 +4,9 @@ export const metadata = {
   keywords: "projects, page, Ivan Miceta",
 };
 export default function Projects() {
-  return <div>Projects</div>;
+  return (
+    <div className='flex items-center flex-1 justify-center bg-rose-200'>
+      Projects page
+    </div>
+  );
 }

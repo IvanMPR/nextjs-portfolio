@@ -1,11 +1,13 @@
-// "use client";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-export default function ThemeSwitch() {
+export default function ThemeSwitch({ selectedTheme }) {
   return (
     <div>
-      <FaMoon size={18} />
-      <FaSun size={18} />
+      <FaMoon
+        size={15}
+        className=' hover:cursor-pointer'
+        // alt='Change color theme'
+      />
     </div>
   );
 }
