@@ -6,10 +6,16 @@ export default function Footer() {
     <Container>
       <footer className=' flex py-5'>
         <div className=' mr-5'>
-          <FaGithub size={32} className=' hover:cursor-pointer' />
+          <FaGithub
+            size={32}
+            className=' hover:cursor-pointer hover:text-primary text-text '
+          />
         </div>
         <div>
-          <FaLinkedin size={32} className=' hover:cursor-pointer' />
+          <FaLinkedin
+            size={32}
+            className=' hover:cursor-pointer hover:text-primary text-text'
+          />
         </div>
       </footer>
     </Container>

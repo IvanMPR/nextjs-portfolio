@@ -2,15 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root,
+  [data-theme="default"] {
+    --color-bg: #ffffff;
+    --color-bg-offset: #f7f7f9;
+    --color-text: #373a3c;
+    --color-text-offset: #818a91;
+    --color-primary: #ff335f;
+    --color-primary-offset: #ff1447;
+    --color-secondary: #43a9a3;
+  }
+  [data-theme="dark"] {
+    --color-bg: #0e141b;
+    /* --color-bg-offset: #252526;*/
+    --color-bg-offset: #32323f;
+    --color-text: #ffffff;
+    --color-text-offset: #818a91;
+    --color-border: #2d2d2d;
+    --color-primary: #ff5277;
+    --color-primary-offset: #ff2957;
+    --color-secondary: #43a9a3;
+    --color-black: #000;
+  }
+}
+
 @layer components {
   .active {
-    border-bottom: 4px solid theme("colors.pink.500");
+    border-bottom: 4px solid var(--color-primary);
   }
 
   li {
     position: relative;
     padding-bottom: 4px;
-    /* background-color: beige; */
   }
 
   li::before {
@@ -24,8 +48,9 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: grey;
+    background-color: var(--color-primary);
     z-index: 500;
+    cursor: pointer;
   }
 
   li:hover::before {

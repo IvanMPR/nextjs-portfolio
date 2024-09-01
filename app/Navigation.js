@@ -8,34 +8,42 @@ export default function Navigation() {
   return (
     <nav className='  '>
       <ul className=' flex'>
-        <li className={`mr-8   `}>
+        <li className='mr-8'>
           <Link
             href={"/"}
-            className={` ${pathname === "/" ? " text-rose-500" : ""}`}
+            className={` font-medium ${
+              pathname === "/" ? " text-primary" : ""
+            }`}
           >
-            <span className=' '>01</span> Home
+            <span className=''>01</span> Home
           </Link>
         </li>
-        <li className={`mr-8   `}>
+        <li className='mr-8'>
           <Link
             href={"/about"}
-            className={` ${pathname === "/about" ? " text-rose-500" : ""}`}
+            className={` font-medium ${
+              pathname === "/about" ? " text-rose-500" : ""
+            }`}
           >
-            <span className=' '>02</span> About
+            <span className=''>02</span> About
           </Link>
         </li>
-        <li className={`mr-8 `}>
+        <li className='mr-8'>
           <Link
             href={"/projects"}
-            className={`${pathname === "/projects" ? " text-rose-500" : ""}`}
+            className={` font-medium ${
+              pathname === "/projects" ? " text-rose-500" : ""
+            }`}
           >
             <span className=' '>03</span> Projects
           </Link>
         </li>
-        <li className={`mr-8   `}>
+        <li className='mr-8'>
           <Link
             href={"/contact"}
-            className={`${pathname === "/contact" ? " text-rose-500" : ""}`}
+            className={` font-medium ${
+              pathname === "/contact" ? " text-rose-500" : ""
+            }`}
           >
             <span className=''>04</span> Contact
           </Link>
