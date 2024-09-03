@@ -5,25 +5,30 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
-      // colors: {
-      //   primary: "rgb(var(--color-primary) / alpha-value)",
-      //   primaryOffset: "rgb(var(--color-primary-offset) / alpha-value)",
-      // },
       colors: {
-        bg: "var(--color-bg)",
-        "bg-offset": "var(--color-bg-offset)",
-        text: "var(--color-text)",
-        "text-offset": "var(--color-text-offset)",
-        primary: "var(--color-primary)",
-        "primary-offset": "var(--color-primary-offset)",
-        secondary: "var(--color-secondary)",
+        bgColor: "var(--color-bg)",
+        bgColorDark: "var(--color-bg-dark)",
+
+        bgOffsetColor: "var(--color-bg-offset)",
+        bgOffsetColorDark: "var(--color-bg-offset-dark)",
+
+        textColor: "var(--color-text)",
+        textColorDark: "var(--color-text-dark)",
+
+        textOffsetColor: "var(--color-text-offset)",
+        textOffsetColorDark: "var(--color-text-offset-dark)",
+
+        primaryColor: "var(--color-primary)",
+        primaryColorDark: "var(--color-primary-dark)",
+
+        primaryOffsetColor: "var(--color-primary-offset)",
+        primaryOffsetColorDark: "var(--color-primary-offset-dark)",
+
+        secondaryColor: "var(--color-secondary)",
+        secondaryColorDark: "var(--color-secondary-dark)",
       },
     },
   },

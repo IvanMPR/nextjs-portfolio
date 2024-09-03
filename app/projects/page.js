@@ -5,8 +5,6 @@ export const metadata = {
 };
 export default function Projects() {
   return (
-    <div className='flex items-center flex-1 justify-center bg-rose-200'>
-      Projects page
-    </div>
+    <div className='flex items-center flex-1 justify-center'>Projects page</div>
   );
 }

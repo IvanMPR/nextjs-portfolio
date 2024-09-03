@@ -1,30 +1,45 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-export default function ThemeSwitch({ selectedTheme }) {
-  const [theme, setTheme] = useState("default");
-  function handleTheme() {
-    if (theme === "default") {
-      setTheme("dark");
-      selectedTheme("dark");
+export default function ThemeSwitch() {
+  const [darkTheme, setDarkTheme] = useState(true);
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      setDarkTheme(true);
     } else {
-      setTheme("default");
-      selectedTheme("default");
+      setDarkTheme(false);
     }
+  }, []);
+
+  useEffect(() => {
+    if (darkTheme) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkTheme]);
+
+  function handleTheme() {
+    setDarkTheme(!darkTheme);
   }
+
   return (
     <div onClick={handleTheme}>
-      {theme === "default" ? (
-        <FaMoon
+      {darkTheme ? (
+        <FaSun
           size={15}
-          className=' hover:cursor-pointer text-text'
+          className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
           // alt='Change color theme'
         />
       ) : (
-        <FaSun
+        <FaMoon
           size={15}
-          className=' hover:cursor-pointer text-text'
+          className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
           // alt='Change color theme'
         />
       )}

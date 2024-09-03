@@ -8,13 +8,13 @@ export default function Footer() {
         <div className=' mr-5'>
           <FaGithub
             size={32}
-            className=' hover:cursor-pointer hover:text-primary text-text '
+            className=' hover:cursor-pointer hover:text-primaryColor transition-all'
           />
         </div>
         <div>
           <FaLinkedin
             size={32}
-            className=' hover:cursor-pointer hover:text-primary text-text'
+            className=' hover:cursor-pointer hover:text-primaryColor transition-all'
           />
         </div>
       </footer>
