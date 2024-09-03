@@ -31,17 +31,21 @@ export default function ThemeSwitch() {
   return (
     <div onClick={handleTheme}>
       {darkTheme ? (
-        <FaSun
-          size={15}
-          className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-          // alt='Change color theme'
-        />
+        <div className='p-4 bg-bgOffsetColor dark:bg-bgOffsetColorDark rounded-full'>
+          <FaSun
+            size={16}
+            className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
+            // name='Change color theme'
+          />
+        </div>
       ) : (
-        <FaMoon
-          size={15}
-          className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-          // alt='Change color theme'
-        />
+        <div className='p-4 bg-bgOffsetColor dark:bg-bgOffsetColorDark rounded-full'>
+          <FaMoon
+            size={16}
+            className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
+            // name='Change color theme'
+          />
+        </div>
       )}
     </div>
   );

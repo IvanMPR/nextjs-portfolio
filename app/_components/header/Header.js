@@ -7,16 +7,18 @@ import Container from "../utils/Container";
 
 export default function Header() {
   return (
-    <Container>
-      <header className=' flex items-center justify-between py-5'>
-        <div className=' flex items-center justify-center'>
-          <Logo />
-          <ThemeSwitch />
+    <header className='  shadow-custom'>
+      <Container>
+        <div className='  flex items-center justify-between py-3 '>
+          <div className=' flex items-center justify-center'>
+            <Logo />
+            <ThemeSwitch />
+          </div>
+          <div>
+            <Navigation />
+          </div>
         </div>
-        <div>
-          <Navigation />
-        </div>
-      </header>
-    </Container>
+      </Container>
+    </header>
   );
 }

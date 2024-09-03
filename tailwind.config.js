@@ -30,6 +30,10 @@ module.exports = {
         secondaryColor: "var(--color-secondary)",
         secondaryColorDark: "var(--color-secondary-dark)",
       },
+
+      boxShadow: {
+        custom: "0px 1rem 1rem -1rem rgba(13, 43, 90, 0.08)",
+      },
     },
   },
   plugins: [],

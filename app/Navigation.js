@@ -7,9 +7,11 @@ export default function Navigation() {
   const pathname = usePathname();
   // pb-2 border-b-4
   return (
-    <nav className=' flex items-center'>
+    <nav className=' flex items-center justify-center min-h-12'>
       <ul className='hidden sm:hidden md:hidden lg:flex'>
-        <li className='mr-8'>
+        <li
+          className={` mr-8 font-medium ${pathname === "/" ? " active" : ""}`}
+        >
           <Link
             href={"/"}
             className={` font-medium ${
@@ -50,7 +52,7 @@ export default function Navigation() {
           </Link>
         </li>
       </ul>
-      <div className=' block bg-bgOffsetColor dark:bg-bgOffsetColorDark rounded-full'>
+      <div className=' rounded-full sm:block md:block lg:hidden bg-bgOffsetColor dark:bg-bgOffsetColorDark'>
         <Sling size={20} rounded />
       </div>
     </nav>
