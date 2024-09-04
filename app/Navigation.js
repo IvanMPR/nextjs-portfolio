@@ -52,7 +52,7 @@ export default function Navigation() {
           </Link>
         </li>
       </ul>
-      <div className=' rounded-full sm:block md:block lg:hidden bg-bgOffsetColor dark:bg-bgOffsetColorDark'>
+      <div className=' rounded-full sm:block md:block lg:hidden hover:bg-bgOffsetColor hover:dark:bg-bgOffsetColorDark cursor-pointer transition-all'>
         <Sling size={20} rounded />
       </div>
     </nav>

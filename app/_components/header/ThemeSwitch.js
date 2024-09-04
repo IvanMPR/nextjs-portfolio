@@ -29,9 +29,9 @@ export default function ThemeSwitch() {
   }
 
   return (
-    <div onClick={handleTheme}>
+    <div onClick={handleTheme} className=' cursor-pointer'>
       {darkTheme ? (
-        <div className='p-4 bg-bgOffsetColor dark:bg-bgOffsetColorDark rounded-full'>
+        <div className='p-4 hover:bg-bgOffsetColor hover:dark:bg-bgOffsetColorDark rounded-full'>
           <FaSun
             size={16}
             className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
@@ -39,7 +39,7 @@ export default function ThemeSwitch() {
           />
         </div>
       ) : (
-        <div className='p-4 bg-bgOffsetColor dark:bg-bgOffsetColorDark rounded-full'>
+        <div className='p-4 hover:bg-bgOffsetColor hover:dark:bg-bgOffsetColorDark rounded-full transition-all'>
           <FaMoon
             size={16}
             className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
