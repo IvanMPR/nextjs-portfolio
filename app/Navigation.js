@@ -1,21 +1,24 @@
 "use client";
+
 import Link from "next/link";
+
+import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Sling as Hamburger, Sling } from "hamburger-react";
+import { Sling as Hamburger } from "hamburger-react";
+import SideMenu from "./_components/header/SideMenu";
 
 export default function Navigation() {
   const pathname = usePathname();
-  // pb-2 border-b-4
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className=' flex items-center justify-center min-h-12'>
       <ul className='hidden sm:hidden md:hidden lg:flex'>
-        <li
-          className={` mr-8 font-medium ${pathname === "/" ? " active" : ""}`}
-        >
+        <li className='mr-8'>
           <Link
             href={"/"}
-            className={` font-medium ${
-              pathname === "/" ? " text-primaryColor" : ""
+            className={` pb-[5px] font-medium ${
+              pathname === "/" ? " active text-primaryColor" : ""
             }`}
           >
             <span className=''>01</span> Home
@@ -24,8 +27,8 @@ export default function Navigation() {
         <li className='mr-8'>
           <Link
             href={"/about"}
-            className={` font-medium ${
-              pathname === "/about" ? "text-primaryColor" : ""
+            className={` pb-[5px] font-medium ${
+              pathname === "/about" ? "active text-primaryColor" : ""
             }`}
           >
             <span className=''>02</span> About
@@ -34,8 +37,8 @@ export default function Navigation() {
         <li className='mr-8'>
           <Link
             href={"/projects"}
-            className={` font-medium ${
-              pathname === "/projects" ? "text-primaryColor" : ""
+            className={` pb-[5px] font-medium ${
+              pathname === "/projects" ? "active text-primaryColor" : ""
             }`}
           >
             <span className=' '>03</span> Projects
@@ -44,8 +47,8 @@ export default function Navigation() {
         <li className='mr-8'>
           <Link
             href={"/contact"}
-            className={` font-medium ${
-              pathname === "/contact" ? "text-primaryColor" : ""
+            className={` pb-[5px] font-medium ${
+              pathname === "/contact" ? "active text-primaryColor" : ""
             }`}
           >
             <span className=''>04</span> Contact
@@ -53,9 +56,9 @@ export default function Navigation() {
         </li>
       </ul>
       <div className=' rounded-full sm:block md:block lg:hidden hover:bg-bgOffsetColor hover:dark:bg-bgOffsetColorDark cursor-pointer transition-all'>
-        <Sling size={20} rounded />
+        <Hamburger size={20} rounded onToggle={toggled => setIsOpen(toggled)} />
       </div>
+      {isOpen && <SideMenu setIsOpen={setIsOpen} pathname={pathname} />}
     </nav>
   );
 }
-// sm:block md:block lg:hidden // sling parent

@@ -27,28 +27,33 @@
 
 @layer components {
   .active {
-    border-bottom: 4px solid var(--color-secondary);
+    border-bottom: 4px solid var(--color-primary);
+    /* position: relative; */
+    /* top: 4px; */
+    /* padding-bottom: 4px; */
+    /* z-index: 1000; */
   }
 
   li {
+    display: inline-block;
     position: relative;
-    /* padding-bottom: 5px; */
+    padding-bottom: 4px;
   }
 
   li::before {
     content: "";
-    display: block;
+    display: inline-block;
     width: 0;
     height: 4px;
     transition: width 0.3s ease;
     margin: 0 auto;
 
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--color-primary);
-    z-index: 500;
+    background-color: var(--color-bg-offset);
+    z-index: -1;
     cursor: pointer;
   }
 
@@ -56,3 +61,14 @@
     width: 100%;
   }
 }
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-bg-dark);
+    --color-bg-offset: var(--color-bg-offset-dark);
+    --color-text: var(--color-text-dark);
+    --color-text-offset: var(--color-text-offset-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-primary-offset: var(--color-primary-offset-dark);
+    --color-secondary: var(--color-secondary-dark);
+  }
+} */
