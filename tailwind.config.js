@@ -34,6 +34,15 @@ module.exports = {
       boxShadow: {
         custom: "0px 1rem 1rem -1rem rgba(13, 43, 90, 0.08)",
       },
+      keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 0.3s ease-in-out forwards",
+      },
     },
   },
   plugins: [],

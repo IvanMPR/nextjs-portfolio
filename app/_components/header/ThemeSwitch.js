@@ -35,7 +35,7 @@ export default function ThemeSwitch() {
           <FaSun
             size={16}
             className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-            // name='Change color theme'
+            // label='Change color theme'
           />
         </div>
       ) : (
@@ -43,7 +43,7 @@ export default function ThemeSwitch() {
           <FaMoon
             size={16}
             className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-            // name='Change color theme'
+            // label='Change color theme'
           />
         </div>
       )}

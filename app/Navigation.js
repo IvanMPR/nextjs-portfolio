@@ -56,7 +56,12 @@ export default function Navigation() {
         </li>
       </ul>
       <div className=' rounded-full sm:block md:block lg:hidden hover:bg-bgOffsetColor hover:dark:bg-bgOffsetColorDark cursor-pointer transition-all'>
-        <Hamburger size={20} rounded onToggle={toggled => setIsOpen(toggled)} />
+        <Hamburger
+          size={20}
+          rounded
+          onToggle={toggled => setIsOpen(toggled)}
+          toggled={isOpen}
+        />
       </div>
       {isOpen && <SideMenu setIsOpen={setIsOpen} pathname={pathname} />}
     </nav>
