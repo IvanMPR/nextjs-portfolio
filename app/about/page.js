@@ -1,3 +1,5 @@
+import PageTitle from "../_components/utils/PageTitle";
+import { FaUser } from "react-icons/fa";
 export const metadata = {
   title: "About",
   description: "About page of Ivan Miceta's portfolio",
@@ -7,10 +9,7 @@ export const metadata = {
 export default function About() {
   return (
     <div className='flex items-center flex-1 justify-center'>
-      <h1>About Page</h1>
-      <p>
-        Hi, I&apos;m Ivan Miceta. I&apos;m a software developer from Serbia.
-      </p>
+      <PageTitle title={"About"} icon={<FaUser />} />
     </div>
   );
 }

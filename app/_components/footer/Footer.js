@@ -4,16 +4,16 @@ import Container from "../utils/Container";
 export default function Footer() {
   return (
     <Container>
-      <footer className=' flex py-5'>
+      <footer className=' flex justify-end py-5'>
         <div className=' mr-5'>
           <FaGithub
-            size={32}
+            size={30}
             className=' hover:cursor-pointer hover:text-primaryColor transition-all'
           />
         </div>
         <div>
           <FaLinkedin
-            size={32}
+            size={30}
             className=' hover:cursor-pointer hover:text-primaryColor transition-all'
           />
         </div>

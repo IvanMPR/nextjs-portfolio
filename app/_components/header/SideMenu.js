@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function SideMenu({ setIsOpen, pathname }) {
   return (
     <div className='relative'>
-      <div className='fixed top-0 right-0 left-0 bottom-0  bg-bgColor dark:bg-bgColorDark bg-opacity-95 z-50 flex flex-col items-center justify-center lg:hidden animate-slideIn '>
-        <ul className='flex flex-col items-end space-y-8 text-textColor dark:text-textColorDark text-lg'>
+      <div className='fixed inset-0 bg-bgColorDark dark:bg-bgColor bg-opacity-95 z-50 flex flex-col items-center justify-center lg:hidden animate-slideIn '>
+        <ul className='flex flex-col items-end space-y-8 text-textColorDark dark:text-textColor text-lg'>
           <li>
             <Link
               href={"/"}

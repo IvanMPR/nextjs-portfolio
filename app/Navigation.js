@@ -18,7 +18,7 @@ export default function Navigation() {
           <Link
             href={"/"}
             className={` pb-[5px] font-medium ${
-              pathname === "/" ? " active text-primaryColor" : ""
+              pathname === "/" ? " active" : ""
             }`}
           >
             <span className=''>01</span> Home
@@ -28,7 +28,7 @@ export default function Navigation() {
           <Link
             href={"/about"}
             className={` pb-[5px] font-medium ${
-              pathname === "/about" ? "active text-primaryColor" : ""
+              pathname === "/about" ? "active" : ""
             }`}
           >
             <span className=''>02</span> About
@@ -38,17 +38,17 @@ export default function Navigation() {
           <Link
             href={"/projects"}
             className={` pb-[5px] font-medium ${
-              pathname === "/projects" ? "active text-primaryColor" : ""
+              pathname === "/projects" ? "active" : ""
             }`}
           >
             <span className=' '>03</span> Projects
           </Link>
         </li>
-        <li className='mr-8'>
+        <li>
           <Link
             href={"/contact"}
             className={` pb-[5px] font-medium ${
-              pathname === "/contact" ? "active text-primaryColor" : ""
+              pathname === "/contact" ? "active" : ""
             }`}
           >
             <span className=''>04</span> Contact
