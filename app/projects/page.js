@@ -1,13 +1,14 @@
 import PageTitle from "../_components/utils/PageTitle";
 import EmblaCarousel from "../_components/projects/EmblaCarousel";
 import { FaUser } from "react-icons/fa";
+import { projectsLength } from "../_components/projects/projects";
 export const metadata = {
   title: "Projects",
   description: "Projects page of Ivan Miceta's portfolio",
   keywords: "projects, page, Ivan Miceta",
 };
 const OPTIONS = { loop: false };
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = projectsLength;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function Projects() {

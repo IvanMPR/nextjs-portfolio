@@ -1,18 +1,19 @@
 "use client";
 import React, { useState, useCallback, useEffect } from "react";
-
 import useEmblaCarousel from "embla-carousel-react";
+import { projects } from "./projects";
 
-// import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import {
   PrevButton,
   NextButton,
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
 import ProjectsSlide from "./ProjectsSlide";
+
 const projectss = {
   shortTitle: "firebase-budget-tracker",
-  imageSrc: "icons/firebase-budget-tracker.png",
+  imageSrc: "/firebase-budget-tracker.jpg",
+  staticPathImportName: "firebase",
   alt: "firebase-budget-tracker",
   fullTitle: "Budget Tracker - Firebase",
   demoHref: "https://ivanmpr.github.io/firebase-budget-tracker/",
@@ -26,9 +27,6 @@ const EmblaCarousel = props => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [scrollProgress, setScrollProgress] = useState(0);
-
-  // const { selectedIndex, scrollSnaps, onDotButtonClick } =
-  //   useDotButton(emblaApi);
 
   const {
     prevBtnDisabled,
@@ -57,8 +55,7 @@ const EmblaCarousel = props => {
         <div className='embla__container'>
           {slides.map(index => (
             <div className='embla__slide' key={index}>
-              {/* <div className='embla__slide__number'>{index + 1}</div> */}
-              <ProjectsSlide project={projectss} />
+              <ProjectsSlide project={projects[index]} />
             </div>
           ))}
         </div>
