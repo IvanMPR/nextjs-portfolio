@@ -7,7 +7,7 @@ export const metadata = {
   description: "Projects page of Ivan Miceta's portfolio",
   keywords: "projects, page, Ivan Miceta",
 };
-const OPTIONS = { loop: false };
+const OPTIONS = { loop: false, axis: "y" };
 const SLIDE_COUNT = projectsLength;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 

@@ -1,31 +1,19 @@
 "use client";
 import React, { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { projects } from "./projects";
-
 import {
   PrevButton,
   NextButton,
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
-import ProjectsSlide from "./ProjectsSlide";
 
-const projectss = {
-  shortTitle: "firebase-budget-tracker",
-  imageSrc: "/firebase-budget-tracker.jpg",
-  staticPathImportName: "firebase",
-  alt: "firebase-budget-tracker",
-  fullTitle: "Budget Tracker - Firebase",
-  demoHref: "https://ivanmpr.github.io/firebase-budget-tracker/",
-  codeHref: "https://github.com/IvanMPR/firebase-budget-tracker",
-  description:
-    "CRUD app with implemented Firebase database and authentication. You can add, edit, delete and filter your incomes and expenses, having more insight over your finances...",
-  techStack: ["react", "firebase", "tailwind"],
-  projectNum: 0,
-};
+import ProjectsSlide from "./ProjectsSlide";
+import { projects } from "./projects";
+
 const EmblaCarousel = props => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  // const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, axis: "y" });
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const {
@@ -34,6 +22,7 @@ const EmblaCarousel = props => {
     onPrevButtonClick,
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
+
   const onScroll = useCallback(emblaApi => {
     const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
     setScrollProgress(progress * 100);
