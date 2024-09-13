@@ -14,7 +14,7 @@ export default function Navigation() {
   return (
     <nav className=' flex items-center justify-center min-h-12'>
       <ul className='hidden sm:hidden md:hidden lg:flex'>
-        <li className='mr-8'>
+        <li className='mr-8 '>
           <Link
             href={"/"}
             className={` pb-[5px] font-medium ${
