@@ -14,7 +14,7 @@ export function TabsDemo() {
       title: "General",
       value: "general",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-l md:text-normal  text-textColor dark:text-textColorDark bg-gradient-to-br bg-bgColor dark:bg-bgColorDark border-4 border-solid border-primaryColor dark:border-primaryColorDark'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-l md:text-sm  text-textColor dark:text-textColorDark bg-gradient-to-br bg-bgColor dark:bg-bgColorDark border-4 border-solid border-primaryColor dark:border-primaryColorDark'>
           {/* <h3>General</h3> */}
           <p className=' w-[45%] text-justify mb-5'>
             Hello and welcome, I&apos;m Ivan Miceta, self taught web developer,
@@ -62,9 +62,8 @@ export function TabsDemo() {
           <p className='mb-10 w-[55%] text-justify'>
             Rough overview of technologies I&apos;m most comfortable with. The
             most hours I spent in vanilla JavaScript environment, folowed by
-            React and NextJS. I also gained some experience with NodeJS,
-            ExpressJS and SocketIO while working on my online multiplayer game
-            projects.
+            React and NextJS. I also gained experience with NodeJS, ExpressJS
+            and SocketIO while working on my online multiplayer game projects.
           </p>
           <div className='w-[55%]'>
             <SkillBar src='html5' percent='80' />
