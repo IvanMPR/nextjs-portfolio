@@ -5,7 +5,7 @@ import codewars2 from "@/public/codewars2.jpg";
 export default function AboutCodewars({ addBorder }) {
   return (
     <div
-      className={`w-full overflow-hidden relative h-full rounded-2xl p-10 text-l md:text-normal  text-textColor dark:text-textColorDark bg-gradient-to-br bg-bgColor dark:bg-bgColorDark ${
+      className={`w-full overflow-hidden relative h-full rounded-2xl p-10 text-l md:text-normal  text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
           ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark"
           : ""
