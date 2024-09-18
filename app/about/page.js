@@ -1,6 +1,7 @@
-import PageTitle from "../_components/utils/PageTitle";
 import { FaUser } from "react-icons/fa";
-import { TabsDemo } from "../_components/Tabs";
+
+import PageTitle from "../_components/utils/PageTitle";
+import AboutClient from "../_components/about/AboutClient";
 
 export const metadata = {
   title: "About",
@@ -12,7 +13,7 @@ export default function About() {
   return (
     <div className='flex flex-col items-center flex-1 w-full max-w-6xl mx-auto px-4 '>
       <PageTitle title={"About"} icon={<FaUser />} />
-      <TabsDemo />
+      <AboutClient />
     </div>
   );
 }
