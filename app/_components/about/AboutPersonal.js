@@ -5,13 +5,14 @@ import mix from "@/public/mix.jpg";
 export default function AboutPersonal({ addBorder }) {
   return (
     <div
-      className={`w-full overflow-hidden relative h-full rounded-2xl p-10 text-l md:text-sm text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
+      className={`w-full overflow-hidden relative h-full rounded-2xl p-5 text-l md:text-sm text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
           ? "border-4 border-solid border-primaryColor dark:border-primaryColorDark"
           : ""
       }
           
        `}
+      //  p-10
     >
       <div
         className={`${addBorder ? "flex" : "flex-col"} flex justify-between`}

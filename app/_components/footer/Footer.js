@@ -6,16 +6,20 @@ export default function Footer() {
     <Container>
       <footer className=' flex justify-end py-5'>
         <div className=' mr-5'>
-          <FaGithub
-            size={30}
-            className=' hover:cursor-pointer hover:text-primaryColor transition-all'
-          />
+          <span title='Link to my portfolio page'>
+            <FaGithub
+              size={30}
+              className=' hover:cursor-pointer hover:text-primaryColor transition-all'
+            />
+          </span>
         </div>
         <div>
-          <FaLinkedin
-            size={30}
-            className=' hover:cursor-pointer hover:text-primaryColor transition-all'
-          />
+          <span title='Link to my Linkedin profile'>
+            <FaLinkedin
+              size={30}
+              className=' hover:cursor-pointer hover:text-primaryColor transition-all'
+            />
+          </span>
         </div>
       </footer>
     </Container>
