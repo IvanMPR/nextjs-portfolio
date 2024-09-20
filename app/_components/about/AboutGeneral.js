@@ -16,7 +16,7 @@ export default function AboutGeneral({ addBorder }) {
       `}
       // p-10
     >
-      <div className='w-1/2'>
+      <div className={`${addBorder ? "w-1/2" : "w-full"}`}>
         <div className='w-full'>
           <p className='  text-justify mb-5'>
             Hello and welcome, I&apos;m Ivan Miceta, self taught web developer,
@@ -51,8 +51,12 @@ export default function AboutGeneral({ addBorder }) {
           <CVButton />
         </div>
       </div>
-      <div className='flex flex-col w-1/2 items-center'>
-        <div className={`${addBorder ? "w-1/2" : "w-2/3"} `}>
+      <div
+        className={`flex flex-col ${
+          addBorder ? "w-1/2" : "w-full"
+        } items-center`}
+      >
+        <div className={`${addBorder ? "w-1/2" : "w-full mt-5"} `}>
           <span title="Ivan's photo" className='inline-block mb-4'>
             <Image src={IvanCLP} alt="Ivan's photo" placeholder='blur' />
           </span>

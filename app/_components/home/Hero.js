@@ -13,7 +13,7 @@ export default function Hero() {
         </h1>
         <ContactButton />
       </div>
-      <div className=' w-[80%] lg:w-[35%]'>
+      <div className=' w-[80%] mr-auto lg:w-[35%] md:mr-0 lg:mr-0 '>
         <HeroImage />
       </div>
     </main>
