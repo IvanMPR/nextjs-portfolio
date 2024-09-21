@@ -11,13 +11,10 @@
 
 # next.js
 /.next/
-/out/
+# /out/ testing if this will work
 
-# production // comment from SO:make sure that the build folder is not in gitignore
-# /build
-
-
-
+# production 
+/build
 
 # misc
 .DS_Store
