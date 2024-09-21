@@ -13,8 +13,11 @@
 /.next/
 /out/
 
-# production
-/build
+# production // comment from SO:make sure that the build folder is not in gitignore
+# /build
+
+
+
 
 # misc
 .DS_Store
