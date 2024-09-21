@@ -20,7 +20,7 @@ export function TabsDemo() {
       content: <AboutSkills addBorder={true} />,
     },
     {
-      title: "Personal & bio",
+      title: "Personal",
       value: "personal",
       content: <AboutPersonal addBorder={true} />,
     },
