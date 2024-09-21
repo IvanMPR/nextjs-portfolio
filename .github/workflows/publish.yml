@@ -26,6 +26,9 @@ jobs:
         uses: ./.github/workflows/setup-node
         with:
           node-version: "20"
+          # below lines created the error
+          # error resolved with Stack Overflow
+          # https://stackoverflow.com/questions/77933974/how-to-deploy-nextjs-app-with-githup-actions
       # - name: Setup Pages ⚙️
       #   uses: actions/configure-pages@v4
       #   with:
