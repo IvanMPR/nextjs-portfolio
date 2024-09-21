@@ -15,7 +15,7 @@ export default function SkillBar({ src, percent }) {
       >
         <Image
           className='pl-1'
-          src={`/icons/${src}.png`}
+          src={`/nextjs-portfolio/icons/${src}.png`}
           alt={`${src} icon`}
           width={25}
           height={25}
