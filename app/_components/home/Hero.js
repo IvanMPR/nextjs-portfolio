@@ -9,7 +9,9 @@ export default function Hero() {
           <span className='  text-xl uppercase block text-primaryColor dark:text-primaryColorDark pb-10'>
             Hello, my name is Ivan Miceta
           </span>
-          <span className=' text-6xl'>I&apos;m a web developer</span>
+          <span className=' text-6xl'>
+            I&apos;m a self taught web developer
+          </span>
         </h1>
         <ContactButton />
       </div>
