@@ -8,7 +8,7 @@ export default function AboutCodewars({ addBorder }) {
       className={`w-full overflow-hidden relative h-full rounded-2xl  text-l md:text-normal  text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
           ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark p-5"
-          : "p-2"
+          : ""
       }
           
       `}

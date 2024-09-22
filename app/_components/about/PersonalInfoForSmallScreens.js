@@ -16,7 +16,7 @@ export default function PersonalInfoForSmallScreens() {
         <TabList>
           <Tab>General</Tab>
           <Tab>Skills</Tab>
-          <Tab>Personal</Tab>
+          <Tab>Bio</Tab>
           <Tab>Codewars</Tab>
         </TabList>
         <TabPanel>
