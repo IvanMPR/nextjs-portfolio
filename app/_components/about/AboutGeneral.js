@@ -7,10 +7,10 @@ import IvanCLP from "@/public/IvanCLP.png";
 export default function AboutGeneral({ addBorder }) {
   return (
     <div
-      className={`w-full overflow-hidden relative h-full rounded-2xl p-5 text-l md:text-sm  text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
+      className={`w-full overflow-hidden relative h-full rounded-2xl  text-l md:text-sm  text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
-          ? "flex border-4 border-solid border-primaryColor dark:border-primaryColorDark"
-          : ""
+          ? "flex border-4 border-solid border-primaryColor dark:border-primaryColorDark p-5"
+          : "p-2"
       }
           
       `}
