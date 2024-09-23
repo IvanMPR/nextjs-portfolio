@@ -7,7 +7,7 @@ import certificate from "@/public/certificate.jpg";
 export default function AboutSkills({ addBorder }) {
   return (
     <div
-      className={`w-full overflow-hidden relative h-full rounded-2xl  text-l md:text-sm text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
+      className={`w-full pt-1 overflow-hidden relative h-full rounded-2xl  text-l md:text-sm text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
           ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark p-5"
           : ""
