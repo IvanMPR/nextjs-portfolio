@@ -9,7 +9,7 @@ export default function AboutSkills({ addBorder }) {
     <div
       className={`w-full pt-1 overflow-hidden relative h-full rounded-2xl  text-l md:text-sm text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
-          ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark p-5"
+          ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark px-5 pt-10"
           : ""
       }
      ${addBorder ? "flex items-top justify-between" : "flex-col"}

@@ -13,7 +13,7 @@ import { projects } from "./projects";
 const EmblaCarousel = props => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-  // const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, axis: "y" });
+
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const {
@@ -56,18 +56,7 @@ const EmblaCarousel = props => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        {/* <div className='embla__dots'>
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
-              )}
-            />
-          ))}
-        </div> */}
-        <div className='embla__progress'>
+        <div className='embla__progress mr-5 md:mr-0'>
           <div
             className='embla__progress__bar'
             style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
@@ -79,42 +68,3 @@ const EmblaCarousel = props => {
 };
 
 export default EmblaCarousel;
-// import { useCallback } from "react";
-// import ProjectsSlide from "./ProjectsSlide";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-// export default function EmblaCarousel() {
-//   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-
-//   const scrollPrev = useCallback(() => {
-//     if (emblaApi) emblaApi.scrollPrev();
-//   }, [emblaApi]);
-
-//   const scrollNext = useCallback(() => {
-//     if (emblaApi) emblaApi.scrollNext();
-//   }, [emblaApi]);
-
-//   return (
-//     <div class='embla'>
-//       <div className='embla__viewport ' ref={emblaRef}>
-//         <div className='embla__container'>
-//           <div className='embla__slide '>
-//             <ProjectsSlide />
-//           </div>
-//           <div className='embla__slide'>Slide 1</div>
-//           <div className='embla__slide'>Slide 2</div>
-//           <div className='embla__slide'>Slide 3</div>
-//         </div>
-//       </div>
-//       <div>
-//         <button className='embla__prev' onClick={scrollPrev}>
-//           {/* Prev */}
-//           <FaChevronLeft />
-//         </button>
-//         <button className='embla__next' onClick={scrollNext}>
-//           {/* Next */}
-//           <FaChevronRight />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }

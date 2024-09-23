@@ -2,6 +2,7 @@ import PageTitle from "../_components/utils/PageTitle";
 import EmblaCarousel from "../_components/projects/EmblaCarousel";
 import { FaUser } from "react-icons/fa";
 import { projectsLength } from "../_components/projects/projects";
+
 export const metadata = {
   title: "Projects",
   description: "Projects page of Ivan Miceta's portfolio",

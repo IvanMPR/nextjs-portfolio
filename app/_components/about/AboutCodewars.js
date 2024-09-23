@@ -7,7 +7,7 @@ export default function AboutCodewars({ addBorder }) {
     <div
       className={`w-full pt-1 overflow-hidden relative h-full rounded-2xl  text-l md:text-normal  text-textColor dark:text-textColorDark  bg-bgColor dark:bg-bgColorDark ${
         addBorder
-          ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark p-5"
+          ? "border-4 border-solid border-secondaryColor dark:border-secondaryColorDark px-5 pt-10"
           : ""
       }
           
@@ -18,8 +18,8 @@ export default function AboutCodewars({ addBorder }) {
         className={` ${addBorder ? "flex" : "flex-col"} justify-between mb-4`}
       >
         <p className={`${addBorder ? "" : "mb-3"} text-normal text-justify`}>
-          Codewars homepage with my current rank and achievements. Click on the
-          badge below to check my profile.
+          Codewars homepage with my current rank and achievements.{" "}
+          {!addBorder && <p>Click on the badge below to check my profile.</p>}
         </p>
         <span className={`${addBorder ? "mr-14" : ""}`}>
           <CodewarsBadge />

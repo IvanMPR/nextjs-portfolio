@@ -4,15 +4,11 @@ import { staticImagePath } from "./static-paths";
 
 export default function ProjectsSlide({ project }) {
   const {
-    shortTitle,
-    imageSrc,
-    alt,
     fullTitle,
     demoHref,
     codeHref,
     description,
     projectNum,
-    techStack,
     staticPathImportName,
   } = project;
 
