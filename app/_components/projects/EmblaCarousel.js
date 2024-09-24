@@ -51,7 +51,7 @@ const EmblaCarousel = props => {
       </div>
 
       <div className='embla__controls'>
-        <div className='embla__buttons'>
+        <div className='embla__buttons hidden md:grid !important'>
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
