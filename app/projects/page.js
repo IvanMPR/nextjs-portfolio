@@ -15,9 +15,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export default function Projects() {
   return (
     <div className='flex flex-col items-center flex-1 w-full max-w-6xl mx-auto px-4 '>
-      <span className='hidden md:block'>
-        <PageTitle title={"Projects"} icon={<FaUser />} />
-      </span>
+      <PageTitle title={"Projects"} icon={<FaUser />} />
       <div className=' mt-16 w-full'>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
