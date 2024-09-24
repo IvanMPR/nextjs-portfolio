@@ -56,7 +56,7 @@ const EmblaCarousel = props => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className='embla__progress mr-5 md:mr-0'>
+        <div className='embla__progress mr-6 md:mr-0'>
           <div
             className='embla__progress__bar'
             style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
