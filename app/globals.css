@@ -5,12 +5,25 @@
 .embla {
   width: 100%;
   margin: auto;
-  /* --slide-height: auto;
-  --slide-spacing: 1.8rem;
-  --slide-size: 100%; */
   --slide-height: 30rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
+}
+
+@media screen and (min-width: 570px) {
+  .embla {
+    --slide-height: 33rem;
+  }
+}
+@media screen and (min-width: 670px) {
+  .embla {
+    --slide-height: 37rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .embla {
+    --slide-height: 42rem;
+  }
 }
 
 .embla__viewport {
