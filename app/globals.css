@@ -25,6 +25,11 @@
     --slide-height: 42rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .embla {
+    --slide-height: 30rem;
+  }
+}
 
 .embla__viewport {
   overflow: hidden;
