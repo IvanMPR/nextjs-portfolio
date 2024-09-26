@@ -1,6 +1,8 @@
 import Link from "next/link";
 import TechStackIcons from "./TechStackIcons";
 import { staticImagePath } from "./static-paths";
+import { Suspense } from "react";
+import SpinnerMini from "../utils/SpinnerMini";
 
 export default function ProjectsSlide({ project }) {
   const {
@@ -18,13 +20,15 @@ export default function ProjectsSlide({ project }) {
         projectNum % 2 ? "lg:flex-row" : "lg:flex-row-reverse"
       } `}
     >
-      <div className=' '>{staticImagePath(staticPathImportName)}</div>
-      <div>
+      <Suspense fallback={<SpinnerMini />}>
+        <div>{staticImagePath(staticPathImportName)}</div>
+      </Suspense>
+      <div className={`${projectNum % 2 ? "ml-auto" : "mr-auto"}`}>
         <div className='max-w-[70ch] flex flex-col justify-between mb-5'>
           <h3
             className={` font-semibold ${
               projectNum % 2 ? "text-end" : "text-start"
-            }  text-lg mb-3`}
+            }  text-lg mt-2 mb-3`}
           >
             {fullTitle}
           </h3>
