@@ -71,6 +71,7 @@ export function staticImagePath(src) {
           alt='Online two player tic-tac-toe game project image'
           src={ticTacToeProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "weather":
@@ -79,6 +80,7 @@ export function staticImagePath(src) {
           alt='Weather app project image'
           src={weatherProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "map":
@@ -87,6 +89,7 @@ export function staticImagePath(src) {
           alt='European countries project image'
           src={mapProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "hangman":
@@ -95,6 +98,7 @@ export function staticImagePath(src) {
           alt='Hangman game project image'
           src={hangmanProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "shooting":
@@ -103,6 +107,7 @@ export function staticImagePath(src) {
           alt='Shootout game project image'
           src={shootoutProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "firebase":
@@ -111,6 +116,7 @@ export function staticImagePath(src) {
           alt='Firebase budget tracker project image'
           src={firebaseProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "lines":
@@ -119,6 +125,7 @@ export function staticImagePath(src) {
           alt='Lines game project image'
           src={linesProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "memory":
@@ -127,6 +134,7 @@ export function staticImagePath(src) {
           alt='Memory game project image'
           src={memoryGameProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "flags":
@@ -135,6 +143,7 @@ export function staticImagePath(src) {
           alt='Guess the flag quiz project image'
           src={flagsProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "bfs":
@@ -143,6 +152,7 @@ export function staticImagePath(src) {
           alt='BFS visualization project image'
           src={bfsProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     case "portfolio":
@@ -151,6 +161,7 @@ export function staticImagePath(src) {
           alt='Portfolio project image'
           src={portfolioProjectThumbnail}
           className={classname}
+          placeholder='blur'
         />
       );
     default:
