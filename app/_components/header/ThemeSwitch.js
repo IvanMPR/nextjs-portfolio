@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ThemeSwitch() {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
@@ -36,7 +36,6 @@ export default function ThemeSwitch() {
             <FaSun
               size={16}
               className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-              // label='Change color theme'
             />
           </span>
         </div>
@@ -46,7 +45,6 @@ export default function ThemeSwitch() {
             <FaMoon
               size={16}
               className=' hover:cursor-pointer text-textColor dark:text-textColorDark'
-              // label='Change color theme'
             />
           </span>
         </div>
