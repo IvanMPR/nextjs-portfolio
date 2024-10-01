@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -56,9 +57,9 @@ const EmblaCarousel = props => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className='embla__progress mr-6 md:mr-0'>
+        <div className='embla__progress mr-6 md:mr-0 bg-bgOffsetColor dark:bg-bgOffsetColorDark'>
           <div
-            className='embla__progress__bar'
+            className='embla__progress__bar bg-textColor dark:bg-textColorDark'
             style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
           />
         </div>
