@@ -39,7 +39,7 @@ export const PrevButton = props => {
 
   return (
     <button
-      className='embla__button embla__button--prev'
+      className='embla__button embla__button--prev disabled:text-bgOffsetColor dark:disabled:text-bgOffsetColorDark ring-2 ring-textColor dark:ring-textColorDark disabled:ring-bgOffsetColor dark:disabled:ring-bgOffsetColorDark'
       type='button'
       {...restProps}
     >
@@ -59,7 +59,7 @@ export const NextButton = props => {
 
   return (
     <button
-      className='embla__button embla__button--next'
+      className='embla__button embla__button--next disabled:text-bgOffsetColor dark:disabled:text-bgOffsetColorDark ring-2 ring-textColor dark:ring-textColorDark disabled:ring-bgOffsetColor dark:disabled:ring-bgOffsetColorDark'
       type='button'
       {...restProps}
     >
