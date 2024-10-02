@@ -1,6 +1,15 @@
 export default function ContactForm() {
   return (
-    <form className='w-full md:w-2/3'>
+    <form
+      action='https://formsubmit.co/contact@ivanmiceta.dev'
+      method='POST'
+      className='w-full md:w-2/3'
+    >
+      <input
+        type='hidden'
+        name='_next'
+        value='http://localhost:3000/nextjs-portfolio'
+      ></input>
       <div className=' flex flex-col mb-5'>
         <label
           htmlFor='name'
@@ -12,6 +21,7 @@ export default function ContactForm() {
           type='text'
           id='name'
           name='name'
+          required
           className='rounded p-2 text-l border border-bgColorOutline '
         />
       </div>
@@ -26,6 +36,7 @@ export default function ContactForm() {
           type='email'
           id='email'
           name='email'
+          required
           className='rounded p-2 text-l border border-bgColorOutline '
         />
       </div>
@@ -39,8 +50,10 @@ export default function ContactForm() {
         <textarea
           id='message'
           name='message'
+          required
           rows={8}
-          className='rounded border border-bgColorOutline'
+          maxLength={500}
+          className='rounded border border-bgColorOutline p-2'
         ></textarea>
       </div>
       <div>
