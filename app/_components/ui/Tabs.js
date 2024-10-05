@@ -66,7 +66,8 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-20", contentClassName)}
+        // added lg:mt-12 in order to keep footer icons visible on large screens - (17inch laptop)
+        className={cn("mt-20 xl:mt-12", contentClassName)}
       />
     </>
     //  className={cn("mt-32 ", contentClassName)}
