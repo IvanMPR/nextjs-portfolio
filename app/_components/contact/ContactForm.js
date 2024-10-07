@@ -5,11 +5,11 @@ export default function ContactForm() {
       method='POST'
       className='w-full md:w-2/3'
     >
-      <input
+      {/* <input
         type='hidden'
         name='_next'
         value='http://localhost:3000/nextjs-portfolio'
-      ></input>
+      ></input> */}
       <div className=' flex flex-col mb-5'>
         <label
           htmlFor='name'
