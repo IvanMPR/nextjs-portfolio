@@ -196,7 +196,7 @@
     content: "";
     display: inline-block;
     width: 0;
-    height: 4px;
+    height: 3px;
     transition: width 0.3s ease;
     margin: 0 auto;
     position: absolute;
