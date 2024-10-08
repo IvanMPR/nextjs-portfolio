@@ -27,8 +27,8 @@ export default function AboutSkills({ addBorder }) {
         <div className={`${addBorder ? "" : "mb-5"}`}>
           <SkillBar src='html5' percent='80' />
           <SkillBar src='css3' percent='70' />
-          <SkillBar src='sass' percent='60' />
           <SkillBar src='js' percent='85' />
+          <SkillBar src='sass' percent='60' />
           <SkillBar src='react' percent='80' />
           <SkillBar src='nextjs' percent='60' />
           <SkillBar src='nodejs' percent='50' />
