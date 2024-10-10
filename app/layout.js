@@ -14,7 +14,7 @@ export const metadata = {
     template: "Ivan's portfolio | %s",
     default: "Ivan's portfolio | Home",
   },
-  // description: add description here,
+  description: 'Ivan Miceta, self taught web developer, located in Belgrade, Serbia. Portfolio, projects, skills, biography, contact.',
 };
 
 export default function RootLayout({ children }) {
